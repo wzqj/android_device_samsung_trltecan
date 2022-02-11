@@ -18,13 +18,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/hlte/hlte-vendor.mk)
+$(call inherit-product, vendor/samsung/trltecan/trltecan-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # NFC
-$(call inherit-product, device/samsung/hlte-common/nfc/bcm2079x/product.mk)
+# $(call inherit-product, device/samsung/hlte-common/nfc/bcm2079x/product.mk)
 
-# Common hlte
-$(call inherit-product, device/samsung/hlte-common/hlte.mk)
+# Common trlte
+$(call inherit-product, device/samsung/trlte-common/trltecan.mk)
